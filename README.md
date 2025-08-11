@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# App Game Sale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App sencilla desarrollada con React + TypeScript + TailwindCSS que permite explorar juegos desde la API Cheapshark, con funcionalidades para ordenar por alfabeto, precio y descuento. Además, para darle un toque divertido, ¡muestra chistes de Chuck Norris! 🤠
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React
+- 🛣️ React Router
+- ⌨️ TypeScript
+- 🔄 React Query
+- 🎨 TailwindCSS
+- ⚡ Axios
 
-## Expanding the ESLint configuration
+## 🚀 APIs
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎮 Cheapshark API — Juegos y ofertas
+- 🤣 Chuck Norris Jokes API — Chistes
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Características
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- ✅ Consumo eficiente de APIs con React Query y Axios
+- ✅ Listados dinámicos y filtrables de juegos
+- ✅ Componentes reutilizables para cards y skeleton loaders
+- ✅ Navegación SPA fluida con React Router
+- ✅ Diseño responsive con TailwindCSS
+- ✅ Toque divertido con chistes aleatorios en la página principal
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧑‍💻 Instalación y uso
+
+1. Clona el repositorio
+
+```bash
+git clone https://github.com/Jhon-Contreras/game-sale-app
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2 Instala las dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+
+3 Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+
 ```
