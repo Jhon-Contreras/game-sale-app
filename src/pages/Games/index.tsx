@@ -55,13 +55,13 @@ const Games = () => {
             className="border rounded px-3 py-1"
           >
             <option className="text-black" value="alphabetical">
-              Ordenar A-Z
+              Order by A-Z
             </option>
             <option className="text-black" value="price">
-              Ordenar por Precio
+              Order by Price
             </option>
             <option className="text-black" value="savings">
-              Ordenar por Ahorro
+              Order by Savings
             </option>
           </select>
         </div>
