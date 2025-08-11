@@ -1,4 +1,3 @@
-import { use, useEffect, useState } from "react";
 import heroBg from "./../../assets/hero-bg.webp";
 import useChuck from "./useChuck";
 import { useNavigate } from "react-router";
